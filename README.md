@@ -81,4 +81,6 @@ spark = SparkSession.builder \
 
 <img src="https://github.com/DajanaRadovic/BigData/blob/main/images/hadoop.png" alt="Opis slike" width="500"/> 
 
+<img src="https://github.com/DajanaRadovic/BigData/blob/main/images/terminal.png" alt="Opis slike" width="500"/> 
+
 
