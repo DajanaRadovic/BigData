@@ -50,6 +50,8 @@ Ovaj zadatak analizira broj pacijenata na intenzivnoj nezi i u bolnicama po datu
 2. **Izračunat je ukupni broj pacijenata** po datumu.
 3. **Rezultati su prikazani** u obliku **bar grafikona** sa najvišim brojevima pacijenata.
 
+    <img src="https://github.com/DajanaRadovic/BigData/blob/main/images/Figure3.png" alt="Opis slike" width="500"/>
+
 ## Korišćeni alati
 
 - **PySpark**: za rad sa velikim podacima.
