@@ -40,6 +40,8 @@ Za ovaj zadatak, analiziran je prosečan broj novih testova po lokacijama:
 2. **Izračunat je prosečan broj novih testova** po lokacijama.
 3. **Rezultati su predstavljeni** u obliku **bar grafikona**.
 
+   <img src="https://github.com/DajanaRadovic/BigData/blob/main/images/Figure2.png" alt="Opis slike" width="500"/>
+
 ### Job3: Ukupno broj pacijenata u ICU i bolnicama po datumima
 
 Ovaj zadatak analizira broj pacijenata na intenzivnoj nezi i u bolnicama po datumima:
