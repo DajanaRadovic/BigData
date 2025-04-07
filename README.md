@@ -1,6 +1,7 @@
 # Spark COVID-19 Analiza
 
 **Ovaj projekat je razvijen korišćenjem Apache Spark-a za analizu COVID-19 podataka.**  
+
 Podaci su preuzeti sa *Our World in Data* i učitani u HDFS za dalju obradu. Korišćenje Apache Spark-a omogućava brzu i efikasnu analizu velikih količina podataka, a aplikacija se koristi za obavljanje različitih analiza u vezi sa brojem slučajeva, brojem testova i brojem pacijenata na intenzivnoj nezi i u bolnicama. Podaci su obrađeni pomoću YARN za raspodelu resursa i paralelno izvršavanje poslova.
 
 ## Okruženje
@@ -31,7 +32,7 @@ U ovom zadatku analizirani su podaci o broju COVID-19 slučajeva po kontinentima
 4. **Podaci su grupisani po kontinentima**, sumirani su ukupni brojevi slučajeva po kontinentima i rezultat je prikazan u obliku **bar grafikona** pomoću Matplotlib.
 
    <img src="https://github.com/DajanaRadovic/BigData/blob/main/images/Figure1.png" alt="Opis slike" width="500"/>
-
+ 
 ### Job2: Prosečan broj novih testova po lokacijama
 
 Za ovaj zadatak, analiziran je prosečan broj novih testova po lokacijama:
@@ -70,13 +71,14 @@ Ovaj zadatak analizira broj pacijenata na intenzivnoj nezi i u bolnicama po datu
 
 Za pokretanje Spark sesije koristi se sledeća konfiguracija:
 
-```python
+`python
 spark = SparkSession.builder \
     .appName("Job1") \
     .config("spark.executor.memory", "1G") \
     .config("spark.executor.cores", "1") \
     .config("spark.driver.memory", "1G") \
-    .getOrCreate()
+    .getOrCreate()`
 
+<img src="https://github.com/DajanaRadovic/BigData/blob/main/images/hadoop.png" alt="Opis slike" width="500"/> 
 
 
