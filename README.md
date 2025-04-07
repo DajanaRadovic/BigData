@@ -30,6 +30,8 @@ U ovom zadatku analizirani su podaci o broju COVID-19 slučajeva po kontinentima
 3. **Određen je najnoviji datum** za analizu.
 4. **Podaci su grupisani po kontinentima**, sumirani su ukupni brojevi slučajeva po kontinentima i rezultat je prikazan u obliku **bar grafikona** pomoću Matplotlib.
 
+   <img src="https://github.com/DajanaRadovic/BigData/blob/main/images/Figure1.png" alt="Opis slike" width="500"/>
+
 ### Job2: Prosečan broj novih testova po lokacijama
 
 Za ovaj zadatak, analiziran je prosečan broj novih testova po lokacijama:
