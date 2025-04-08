@@ -20,6 +20,59 @@ Podaci su preuzeti sa *Our World in Data* i učitani u HDFS za dalju obradu. Kor
 - Podaci su smešteni u HDFS direktorijum: 
   - `hdfs://localhost:9000/user/hadoop/owid-covid-data.csv`
 
+  # Pokretanje Hadoop i YARN servisa
+
+## 1. Kreiranje korisnika za Hadoop i YARN
+
+Pre nego što pokrenemo Hadoop i YARN servise, potrebno je kreirati odgovarajuće korisnike:
+
+```sh
+sudo adduser hadoop
+sudo adduser yarn
+```
+
+Nakon toga, prijavljujemo se na Hadoop korisnika i pokrećemo HDFS servis.
+
+## 2. Pokretanje Hadoop Distributed File System (HDFS)
+
+Da bismo pokrenuli **HDFS**, koristimo sledeće komande:
+
+```sh
+su - hadoop
+sudo ./sbin/start-dfs.sh
+```
+
+Ovo će pokrenuti **NameNode** i **DataNode** servise, koji su ključni za distribuisano skladištenje podataka u Hadoop sistemu.
+
+## 3. Pokretanje YARN servisa
+
+**YARN (Yet Another Resource Negotiator)** se koristi za raspodelu resursa i izvršavanje zadataka u Hadoop klasteru. Da ga pokrenemo, koristimo sledeće komande:
+
+```sh
+su - yarn
+sudo ./sbin/start-yarn.sh
+```
+
+Ovo će pokrenuti **ResourceManager** i **NodeManager** procese.
+
+## 4. Provera aktivnih servisa
+
+Da bismo proverili da li su servisi ispravno pokrenuti, koristimo komandu:
+
+```sh
+jps
+```
+
+Ako su svi servisi uspešno pokrenuti, trebalo bi da vidimo sledeći izlaz (ili sličan):
+
+```
+1234 NameNode
+5678 DataNode
+9101 ResourceManager
+1121 NodeManager
+1314 SecondaryNameNode
+```
+
 ## Spark Aplikacija
 
 ### Job1: Analiza ukupnog broja slučajeva po kontinentima
