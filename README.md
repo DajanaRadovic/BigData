@@ -117,12 +117,6 @@ Ovaj zadatak analizira broj pacijenata na intenzivnoj nezi i u bolnicama po datu
 - **HDFS**: kao sistem za skladištenje podataka.
 - **YARN**: za distribuciju resursa.
 
-## Uputstvo za pokretanje
-
-1. **Postavite Hadoop i Spark** u klasteru.
-2. **Učitajte CSV podatke** u HDFS.
-3. **Pokrenite Spark sesiju** koristeći prethodno definisane konfiguracije.
-4. **Izvršite svaki od jobova** (Job1, Job2, Job3) prema uputstvima.
 
 ## Postavke za Spark sesiju
 
@@ -139,5 +133,12 @@ spark = SparkSession.builder \
 <img src="https://github.com/DajanaRadovic/BigData/blob/main/images/hadoop.png" alt="Opis slike" width="500"/> 
 
 <img src="https://github.com/DajanaRadovic/BigData/blob/main/images/terminal.png" alt="Opis slike" width="500"/> 
+
+## Uputstvo za pokretanje
+
+1. **Postavite Hadoop i Spark** u klasteru.
+2. **Učitajte CSV podatke** u HDFS.
+3. **Pokrenite Spark sesiju** koristeći prethodno definisane konfiguracije.
+4. **Izvršite svaki od jobova** (Job1, Job2, Job3) prema uputstvima.
 
 
