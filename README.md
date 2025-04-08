@@ -44,6 +44,8 @@ sudo ./sbin/start-dfs.sh
 
 Ovo će pokrenuti **NameNode** i **DataNode** servise, koji su ključni za distribuisano skladištenje podataka u Hadoop sistemu.
 
+<img src="https://github.com/DajanaRadovic/BigData/blob/main/images/hadoopKorisnik.png" alt="Opis slike" width="500"/>
+
 ## 3. Pokretanje YARN servisa
 
 **YARN (Yet Another Resource Negotiator)** se koristi za raspodelu resursa i izvršavanje zadataka u Hadoop klasteru. Da ga pokrenemo, koristimo sledeće komande:
@@ -54,6 +56,8 @@ sudo ./sbin/start-yarn.sh
 ```
 
 Ovo će pokrenuti **ResourceManager** i **NodeManager** procese.
+
+<img src="https://github.com/DajanaRadovic/BigData/blob/main/images/yarn.png" alt="Opis slike" width="500"/>
 
 ## 4. Provera aktivnih servisa
 
